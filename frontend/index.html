@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 자동 답변 시스템</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI 자동 답변 시스템</h1>
+            <p>웹사이트의 글에 자동으로 답변을 생성합니다</p>
+        </header>
+
+        <main>
+            <div class="comments-section">
+                <h2>💬 댓글 목록</h2>
+                <div id="comments-list" class="comments-list">
+                    <!-- 댓글들이 동적으로 추가됩니다 -->
+                </div>
+            </div>
+
+            <div class="input-section">
+                <label for="content-input">웹사이트 글 내용:</label>
+                <textarea 
+                    id="content-input" 
+                    placeholder="답변을 생성할 글의 내용을 입력하세요..."
+                    rows="10"
+                ></textarea>
+                <button id="generate-btn" class="btn-primary">답변 생성</button>
+            </div>
+
+            <div class="output-section">
+                <label for="answer-output">생성된 답변:</label>
+                <div id="answer-output" class="answer-box">
+                    <p class="placeholder">답변이 여기에 표시됩니다...</p>
+                </div>
+                <div id="loading" class="loading hidden">
+                    <div class="spinner"></div>
+                    <p>답변을 생성하는 중...</p>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h3>사용 방법</h3>
+                <ol>
+                    <li>각 댓글의 "답변 달기" 버튼을 클릭하면 AI가 자동으로 답변을 생성합니다</li>
+                    <li>또는 위 텍스트 영역에 직접 내용을 입력하고 "답변 생성" 버튼을 클릭할 수 있습니다</li>
+                    <li>Python 전처리와 Spring AI를 활용하여 최적화된 답변을 생성합니다</li>
+                </ol>
+            </div>
+        </main>
+
+        <footer>
+            <p>Powered by Spring AI & Python Preprocessing</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
